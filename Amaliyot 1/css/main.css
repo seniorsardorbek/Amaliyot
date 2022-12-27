@@ -17,4 +17,29 @@ li {
 a {
   text-decoration: none;
   color: black;
+}
+
+.m-auto {
+  width: 1000px;
+}
+
+.carousel-caption h5,
+p {
+  color: white;
+}
+
+.container {
+  width: 1440px !important;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #fff;
+}
+
+.mt-5 {
+  margin-top: 80px !important;
+}
+
+.navbar {
+  z-index: 99;
 }/*# sourceMappingURL=main.css.map */

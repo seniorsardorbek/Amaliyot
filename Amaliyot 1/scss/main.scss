@@ -3,3 +3,26 @@
 @import "./variables";
 @import "./mixins";
 @import "./fonts";
+
+.m-auto {
+  width: 1000px;
+}
+.carousel-caption h5,
+p {
+  color: white;
+}
+.container{
+    width: 1440px !important  ;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #fff;
+//   width: 10px;
+//   height: 10px;
+//   border-radius: 50%;
+}
+.mt-5{
+    margin-top: 80px !important;
+}
+.navbar{
+    z-index: 99;
+}
