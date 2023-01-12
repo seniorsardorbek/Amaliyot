@@ -1,0 +1,50 @@
+ 
+ .marketing{
+    background-image: url(../../img/marketing.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    height: 604px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+ }
+ .marketing h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 150%;
+  color: #01374b;
+  width: 757px;
+}
+.marketing p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  color: #555b5e;
+  width: 510px;
+  margin: 40px 0;
+}
+.marketing:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 839px;
+  background-image: url(../../img/marketing-2.png);
+  background-position: left center;
+  justify-content: center;
+}
+.marketing:nth-child(2)h1{
+  width: 612px;
+}
+.marketing:nth-child(2)ul{
+  width: 612px;
+}
+.marketing-list li{
+  margin: 30px 0;
+  list-style:disc;
+}
+.marketing:nth-child(2) .btns{
+  width: 612px;
+}

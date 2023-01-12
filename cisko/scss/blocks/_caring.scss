@@ -1,0 +1,57 @@
+.caring-section {
+  background-image: url(../../img/caring.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+.caring {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caring h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 150%;
+  text-align: center;
+  margin: 100px auto 25px;
+  color: #eefaff;
+}
+.caring p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 170%;
+  text-align: center;
+  color: #eefaff;
+  width: 750px;
+}
+.caring-btns {
+  margin: 60px auto 188px;
+}
+// according section
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0 !important;
+}
+ .list-group-item{
+  display: block;
+}
+.accordion-button{
+  font-weight: 600 !important;
+ font-size: 24px !important;
+ line-height: 150% !important;
+ color: #01374B !important;
+} 
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: url(../../img/plus.png);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
