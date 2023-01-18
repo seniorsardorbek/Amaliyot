@@ -86,22 +86,22 @@ var myArr = ["foo", "bar", "baz", "sar", "puzz", "kull", "null", "war", "jar", "
 // console.log(myNum.push(8));                                            //* oxririda shun elementni qoshadi
 // console.log(myNum.unshift(8));                                         //* boshidan shu elementni qoshadi
 // console.log(myNum.pop());                                              //* oxiridagi bitta elementni oladi
-// console.log(myNum.shift());                                             //* boshidagi elementni oladi
-// console.log(myNum.fill("s"));                                           //* hamma arrni s qiladi
+// console.log(myNum.shift());                                            //* boshidagi elementni oladi
+// console.log(myNum.fill("s"));                                          //* hamma arrni s qiladi
 // console.log(myNum.reverse());                                          //* teskari tartibda qiladi
 // console.log(myNum.includes(5));                                        //* 5bor yugligini ko'rsatadi
-// console.log(myNum.map(e => parseInt(e)));                                //* ichida funksiya yozsa boladi item * 2
-// console.log(myNum.filter(item => item <3 ));                            //* filtrlab olsa boladi ajratib
-// console.log(myArr.findIndex(item => item === 'foo'));                         //* indexni topib beradi
-// console.log(myNum.reduce((prev , curr) => prev + curr  ));                         //* hammasini qoshib beradi
-// console.log(myNum.toString());                                                        //* hammasini bitta qilib string qilib beradi
-// console.log(myArr.toString());                                                   //* hammasini bitta qilib string qilib beradi
-// console.log(myNum.join(' / '));                                                        //* slash quyib beradi orasiga
-// console.log(myNum.slice(2 , 5)  )                                            //*  2 bilan 5gaca kesib tashladi
-// console.log(myNum.splice(2 , 5)  )                                         //*  2 bilan 5gaca kesib tashladi
-// console.log(myArr.sort());                                                      //*  alfabet boyicha tartib
-// console.log(myNum.sort((a , b)=> {return b+a}));                               //* pastdan tepaga qarab sort
-// console.log(myNum.sort((a , b)=> {return b-a}));                                           //*tepadan pastga qarab sort
+// console.log(myNum.map(e => parseInt(e)));                              //* ichida funksiya yozsa boladi item * 2
+// console.log(myNum.filter(item => item <3 ));                           //* filtrlab olsa boladi ajratib
+// console.log(myArr.findIndex(item => item === 'foo'));                  //* indexni topib beradi
+// console.log(myNum.reduce((prev , curr) => prev + curr  ));              //* hammasini qoshib beradi
+// console.log(myNum.toString());                                          //* hammasini bitta qilib string qilib beradi
+// console.log(myArr.toString());                                          //* hammasini bitta qilib string qilib beradi
+// console.log(myNum.join(' / '));                                         //* slash quyib beradi orasiga
+// console.log(myNum.slice(2 , 5)  )                                       //*  2 bilan 5gaca kesib tashladi
+// console.log(myNum.splice(2 , 5)  )                                      //*  2 bilan 5gaca kesib tashladi
+// console.log(myArr.sort());                                              //*  alfabet boyicha tartib
+// console.log(myNum.sort((a , b)=> {return b+a}));                        //* pastdan tepaga qarab sort
+// console.log(myNum.sort((a , b)=> {return b-a}));                        //*tepadan pastga qarab sort
 // console.log(myNum.sort((a , b)=> {return 0.5 - Math.random()}));
 //   let obj = { a: 1, b: 2 , c: 3 }
 //   let arr =[]
@@ -118,7 +118,8 @@ var myArr = ["foo", "bar", "baz", "sar", "puzz", "kull", "null", "war", "jar", "
 //   return arr[arr.length - 2];
 // }
 // console.log(secondLargest(myNum));
-// console.log(myNum.every(x => x = 5));
+// console.log(myNum.
+// (x => x = 5));
 // !Findeing demo
 // sentence = "I am finding Nemo !"
 // function findNemo(sentence) {
@@ -183,19 +184,42 @@ var myArr = ["foo", "bar", "baz", "sar", "puzz", "kull", "null", "war", "jar", "
 // }
 // console.log(indexMultiplier(myNum));
 //  ! An array is special if every even index contains an even number and every odd index contains an odd number. Create a function that returns true if an array is special, and false otherwise.
-
-{
-  var isSpecialArray = function isSpecialArray(arr) {
-    arr.reduce(function (acc, cv, i, arr) {
-      console.log(i + 1);
-    }, 0);
-  };
-
-  var _myNum = [2, 7, 4, 9, 6, 1, 6, 3];
-  isSpecialArray(_myNum);
-} // switch (key) {
+// {
+//   let myNum = [2, 7, 4, 9, 6, 1, 6, 3]
+// function isSpecialArray(arr) {
+// 	arr.reduce((acc, cv, i  , arr) =>{
+//     console.log(i +1 )
+//     2
+//   },0);
+// }
+// isSpecialArray(myNum)
+// }
+// switch (key) {
 //   case value:
 //     break;
 //   default:
 //     break;
 // }
+// {
+
+{
+  var _myNum = [1, 2, 3, 4, 5, 6, 7, 8];
+  var twoArr = []; // function teng (arr){
+
+  for (i = 0; i < _myNum.length; i++) {
+    twoArr.push(i);
+
+    if (twoArr[i] !== _myNum[i]) {
+      console.log(_myNum[i]);
+    }
+  } // console.log( teng(myNum ))
+  // }
+  // console.log( myNum.length)
+  // myNum.forEach((item) => {
+  //   console.log(twoArr.includes(item));
+  //   if(!twoArr.includes(item)){
+  //     console.log(item);
+  //   }
+  // });
+
+}
