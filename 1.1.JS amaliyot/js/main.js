@@ -125,7 +125,7 @@ let myArr = [
 // console.log(myNum.fill("s"));                                          //* hamma arrni s qiladi
 // console.log(myNum.reverse());                                          //* teskari tartibda qiladi
 // console.log(myNum.includes(5));                                        //* 5bor yugligini ko'rsatadi
-// console.log(myNum.map(e => parseInt(e)));                              //* ichida funksiya yozsa boladi item * 2
+console.log(myNum.map(e => parseInt(e)));                              //* ichida funksiya yozsa boladi item * 2
 // console.log(myNum.filter(item => item <3 ));                           //* filtrlab olsa boladi ajratib
 // console.log(myArr.findIndex(item => item === 'foo'));                  //* indexni topib beradi
 // console.log(myNum.reduce((prev , curr) => prev + curr  ));              //* hammasini qoshib beradi
@@ -257,16 +257,16 @@ let myArr = [
 
 // {
 
-{
-  let myNum = [1, 2, 3, 4, 5 ,6 ,7, 8];
-  let twoArr = [];
-  // function teng (arr){
-  for (i = 0; i < myNum.length; i++) {
-    twoArr.push(i);
-    if(twoArr[i] !== myNum[i]){
-      console.log(myNum[i]);
-    }
-  }
+// {
+//   let myNum = [1, 2, 3, 4, 5 ,6 ,7, 8];
+//   let twoArr = [];
+//   // function teng (arr){
+//   for (i = 0; i < myNum.length; i++) {
+//     twoArr.push(i);
+//     if(twoArr[i] !== myNum[i]){
+//       console.log(myNum[i]);
+//     }
+//   }
   // console.log( teng(myNum ))
   // }
   // console.log( myNum.length)
@@ -276,4 +276,4 @@ let myArr = [
   //     console.log(item);
   //   }
   // });
-}
+// }

@@ -90,7 +90,10 @@ var myArr = ["foo", "bar", "baz", "sar", "puzz", "kull", "null", "war", "jar", "
 // console.log(myNum.fill("s"));                                          //* hamma arrni s qiladi
 // console.log(myNum.reverse());                                          //* teskari tartibda qiladi
 // console.log(myNum.includes(5));                                        //* 5bor yugligini ko'rsatadi
-// console.log(myNum.map(e => parseInt(e)));                              //* ichida funksiya yozsa boladi item * 2
+
+console.log(myNum.map(function (e) {
+  return parseInt(e);
+})); //* ichida funksiya yozsa boladi item * 2
 // console.log(myNum.filter(item => item <3 ));                           //* filtrlab olsa boladi ajratib
 // console.log(myArr.findIndex(item => item === 'foo'));                  //* indexni topib beradi
 // console.log(myNum.reduce((prev , curr) => prev + curr  ));              //* hammasini qoshib beradi
@@ -201,25 +204,23 @@ var myArr = ["foo", "bar", "baz", "sar", "puzz", "kull", "null", "war", "jar", "
 //     break;
 // }
 // {
-
-{
-  var _myNum = [1, 2, 3, 4, 5, 6, 7, 8];
-  var twoArr = []; // function teng (arr){
-
-  for (i = 0; i < _myNum.length; i++) {
-    twoArr.push(i);
-
-    if (twoArr[i] !== _myNum[i]) {
-      console.log(_myNum[i]);
-    }
-  } // console.log( teng(myNum ))
-  // }
-  // console.log( myNum.length)
-  // myNum.forEach((item) => {
-  //   console.log(twoArr.includes(item));
-  //   if(!twoArr.includes(item)){
-  //     console.log(item);
-  //   }
-  // });
-
-}
+// {
+//   let myNum = [1, 2, 3, 4, 5 ,6 ,7, 8];
+//   let twoArr = [];
+//   // function teng (arr){
+//   for (i = 0; i < myNum.length; i++) {
+//     twoArr.push(i);
+//     if(twoArr[i] !== myNum[i]){
+//       console.log(myNum[i]);
+//     }
+//   }
+// console.log( teng(myNum ))
+// }
+// console.log( myNum.length)
+// myNum.forEach((item) => {
+//   console.log(twoArr.includes(item));
+//   if(!twoArr.includes(item)){
+//     console.log(item);
+//   }
+// });
+// }
